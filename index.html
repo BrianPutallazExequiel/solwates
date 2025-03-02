@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solwates | Compania de desarrollo de software</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/main.js"></script>
+</head>
+<body class="container">
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="./assets/logo.png" alt="Logo de la Compania">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#">Inicio</a></li>
+                <li class="header__nav-item"><a href="#">Proyectos</a></li>
+                <li class="header__nav-item"><a href="#">Precios</a></li>
+                <li class="header__nav-item"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <label class="header__burger" for="burger">
+            <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <button class="header__btn">
+            <a class="btn" href="#contacto">Contacto</a>
+        </button>
+    </header>
+    <main>
+        <!---------------------------------------------->
+        <!-------------- Hero Section ------------------>
+        <!---------------------------------------------->
+        <section class="hero">
+            <div class="hero__content">
+                <h2 class="hero__title">Transformamos tus ideas en <br> <span>soluciones digitales eficientes</span>
+                </h2>
+                <p class="hero__subtitle"></p>
+                <button class="btn hero__btn">
+                    <a class="hero__btn-link" href="#contacto">Contacto</a>
+                </button>
+            </div>
+            <picture class="hero__img">
+                <!-- Imagen optimizada para móviles -->
+                <source media="(max-width: 768px)" type="image/webp"
+                    srcset="./assets/hero-img-400.webp 400w, ./assets/hero-img-800.webp 800w">
+                <source media="(max-width: 768px)" type="image/png"
+                    srcset="./assets/hero-img-400.png 400w, ./assets/hero-img-400.png 800w">
+
+                <!-- Imagen optimizada para escritorio -->
+                <source media="(min-width: 769px)" type="image/webp"
+                    srcset="./assets/hero-img-400.webp 400w, ./assets/hero-img-800.webp 800w">
+                <source media="(min-width: 769px)" type="image/png"
+                    srcset="./assets/hero-img-400.png 400w, ./assets/hero-img-800.png 800w">
+
+                <!-- Fallback para navegadores sin soporte -->
+                <img src="./assets/hero-img-800.png" decoding="async" alt="Descripción de la imagen">
+            </picture>
+        </section>
+
+        <!---------------------------------------------->
+        <!-------------- Slider Logos ------------------>
+        <!---------------------------------------------->
+        <section class="logos-section">
+            <p class="logos-section__subtitle">Tu sitio web optimizado e integrado con herramientas como:</p>
+            <div class="logos-slider">
+                <!-- Lista de logos (duplicada para el efecto de loop infinito) -->
+                <div class="slide-track">
+                    <!-- Logos originales -->
+                    <div class="slide slide-1">
+                        <img width="50" src="./assets/google-analitics.png" alt="Logo de google google-analitics">
+                    </div>
+                    <div class="slide slide-2">
+                        <img src="./assets/facebook-pixel.png" alt="Logo de facebook pixel">
+                    </div>
+                    <div class="slide slide-3">
+                        <img src="./assets/semrush.png" alt="Logo de semrush">
+                    </div>
+                    <div class="slide slide-4">
+                        <img src="./assets/mailchimp.png" alt="Logo de mailchimp">
+                    </div>
+                    <!-- Duplicados para el efecto continuo -->
+
+                    <div class="slide slide-1">
+                        <img width="50" src="./assets/google-analitics.png" alt="Logo de google google-analitics">
+                    </div>
+                    <div class="slide slide-2">
+                        <img src="./assets/facebook-pixel.png" alt="Logo de facebook pixel">
+                    </div>
+                    <div class="slide slide-3">
+                        <img src="./assets/semrush.png" alt="Logo de semrush">
+                    </div>
+                    <div class="slide slide-4">
+                        <img src="./assets/mailchimp.png" alt="Logo de mailchimp">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------------------->
+        <!----------------- Beneficts ------------------>
+        <!---------------------------------------------->
+        <section class="benefits">
+            <div class="benefits__content">
+                <h3 class="benefits__title">Beneficios</h3>
+                <p class="benefits__subtitle">Un servicio realizado a medida adaptandose perfectamente a las necesidades
+                    del cliente, optimizando procesos, mejorando la eficiencia y brindando una ventaja competitiva en el
+                    mercado.</p>
+            </div>
+            <div class="benefits__articles">
+                <article class="benefits__article">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 48 48">
+                        <g fill="#616161">
+                            <path d="m29.175 31.99l2.828-2.827l12.019 12.019l-2.828 2.827z" />
+                            <circle cx="20" cy="20" r="16" />
+                        </g>
+                        <path fill="#37474F" d="m32.45 35.34l2.827-2.828l8.696 8.696l-2.828 2.828z" />
+                        <circle cx="20" cy="20" r="13" fill="#64B5F6" />
+                        <path fill="#BBDEFB"
+                            d="M26.9 14.2c-1.7-2-4.2-3.2-6.9-3.2s-5.2 1.2-6.9 3.2c-.4.4-.3 1.1.1 1.4c.4.4 1.1.3 1.4-.1C16 13.9 17.9 13 20 13s4 .9 5.4 2.5c.2.2.5.4.8.4c.2 0 .5-.1.6-.2c.4-.4.4-1.1.1-1.5" />
+                    </svg>
+                    <h4 class="benefits__article-title">¡Mejor Visibilidad Online!</h4>
+                    <p class="benefits__article-text">Optimiza tu presencia en internet y llega a más clientes
+                        potenciales. ¡Haz que te encuentren fácilmente!</p>
+                </article>
+                <article class="benefits__article">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32">
+                        <g fill="none">
+                            <g filter="url(#IconifyId1955375ed8d98608a71)">
+                                <path fill="#4686EC"
+                                    d="m14.035 3.552l4.264 7.284l-6.016 1.71C8.128 11.173 5.681 8.53 4.205 5.814c-.622-1.146-.617-3.25 1.856-3.25h6.248a2 2 0 0 1 1.726.989" />
+                                <path fill="url(#IconifyId1955375ed8d98608a67)"
+                                    d="m14.035 3.552l4.264 7.284l-6.016 1.71C8.128 11.173 5.681 8.53 4.205 5.814c-.622-1.146-.617-3.25 1.856-3.25h6.248a2 2 0 0 1 1.726.989" />
+                                <path fill="url(#IconifyId1955375ed8d98608a59)"
+                                    d="m14.035 3.552l4.264 7.284l-6.016 1.71C8.128 11.173 5.681 8.53 4.205 5.814c-.622-1.146-.617-3.25 1.856-3.25h6.248a2 2 0 0 1 1.726.989" />
+                            </g>
+                            <g filter="url(#IconifyId1955375ed8d98608a72)">
+                                <path fill="#4686EC"
+                                    d="m17.812 3.552l-4.264 7.284l6.016 1.71c4.155-1.374 6.602-4.017 8.078-6.733c.622-1.146.617-3.25-1.856-3.25h-6.248a2 2 0 0 0-1.726.989" />
+                                <path fill="url(#IconifyId1955375ed8d98608a68)"
+                                    d="m17.812 3.552l-4.264 7.284l6.016 1.71c4.155-1.374 6.602-4.017 8.078-6.733c.622-1.146.617-3.25-1.856-3.25h-6.248a2 2 0 0 0-1.726.989" />
+                                <path fill="url(#IconifyId1955375ed8d98608a60)"
+                                    d="m17.812 3.552l-4.264 7.284l6.016 1.71c4.155-1.374 6.602-4.017 8.078-6.733c.622-1.146.617-3.25-1.856-3.25h-6.248a2 2 0 0 0-1.726.989" />
+                            </g>
+                            <path fill="url(#IconifyId1955375ed8d98608a61)"
+                                d="m17.812 3.552l-4.264 7.284l6.016 1.71c4.155-1.374 6.602-4.017 8.078-6.733c.622-1.146.617-3.25-1.856-3.25h-6.248a2 2 0 0 0-1.726.989" />
+                            <circle cx="16.047" cy="20.132" r="10.048" fill="url(#IconifyId1955375ed8d98608a62)" />
+                            <circle cx="16.047" cy="20.132" r="10.048" fill="url(#IconifyId1955375ed8d98608a63)" />
+                            <circle cx="16.047" cy="20.132" r="8.688" fill="url(#IconifyId1955375ed8d98608a64)" />
+                            <circle cx="16.047" cy="20.132" r="7.585" fill="url(#IconifyId1955375ed8d98608a65)" />
+                            <circle cx="16.047" cy="20.132" r="7.585" fill="url(#IconifyId1955375ed8d98608a69)" />
+                            <circle cx="16.047" cy="20.132" r="7.585" fill="url(#IconifyId1955375ed8d98608a70)" />
+                            <g filter="url(#IconifyId1955375ed8d98608a73)">
+                                <path fill="#6F3955"
+                                    d="M17.22 16.8a.8.8 0 0 0-.8-.8h-1.94a.4.4 0 0 0-.4.4v1.177c0 .22.178.4.4.4h.443a.25.25 0 0 1 .25.25V24a.5.5 0 0 0 .5.5h1.047a.5.5 0 0 0 .5-.5z" />
+                            </g>
+                            <path fill="url(#IconifyId1955375ed8d98608a66)"
+                                d="M17.22 16.8a.8.8 0 0 0-.8-.8h-1.94a.4.4 0 0 0-.4.4v1.177c0 .22.178.4.4.4h.443a.25.25 0 0 1 .25.25V24a.5.5 0 0 0 .5.5h1.047a.5.5 0 0 0 .5-.5z" />
+                            <defs>
+                                <linearGradient id="IconifyId1955375ed8d98608a59" x1="6.582" x2="8.377" y1="2.023"
+                                    y2="6.493" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3D89EC" />
+                                    <stop offset="1" stop-color="#3D89EC" stop-opacity="0" />
+                                </linearGradient>
+                                <linearGradient id="IconifyId1955375ed8d98608a60" x1="25.265" x2="23.47" y1="2.023"
+                                    y2="6.493" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3D89EC" />
+                                    <stop offset="1" stop-color="#3D89EC" stop-opacity="0" />
+                                </linearGradient>
+                                <linearGradient id="IconifyId1955375ed8d98608a61" x1="15.749" x2="16.086" y1="7.063"
+                                    y2="7.25" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#1A6DD8" />
+                                    <stop offset="1" stop-color="#1A6DD8" stop-opacity="0" />
+                                </linearGradient>
+                                <linearGradient id="IconifyId1955375ed8d98608a62" x1="21.418" x2="14.413" y1="16.57"
+                                    y2="23.434" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F4C654" />
+                                    <stop offset="1" stop-color="#DC9729" />
+                                </linearGradient>
+                                <linearGradient id="IconifyId1955375ed8d98608a63" x1="12.536" x2="14.802" y1="30.668"
+                                    y2="17.527" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FA8547" />
+                                    <stop offset="1" stop-color="#FA8547" stop-opacity="0" />
+                                </linearGradient>
+                                <linearGradient id="IconifyId1955375ed8d98608a64" x1="23.963" x2="16.047" y1="18.613"
+                                    y2="18.613" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F9A842" />
+                                    <stop offset="1" stop-color="#FAA742" />
+                                    <stop offset="1" stop-color="#FAA742" />
+                                </linearGradient>
+                                <linearGradient id="IconifyId1955375ed8d98608a65" x1="12.541" x2="23.855" y1="19.17"
+                                    y2="19.17" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FAA945" />
+                                    <stop offset="1" stop-color="#EC9936" />
+                                </linearGradient>
+                                <linearGradient id="IconifyId1955375ed8d98608a66" x1="16.423" x2="16.423" y1="24.5"
+                                    y2="23.683" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#693B2E" />
+                                    <stop offset="1" stop-color="#693B2E" stop-opacity="0" />
+                                </linearGradient>
+                                <radialGradient id="IconifyId1955375ed8d98608a67" cx="0" cy="0" r="1"
+                                    gradientTransform="rotate(-123.321 9.745 2.387)scale(4.60352 17.1923)"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3669D9" />
+                                    <stop offset="1" stop-color="#3669D9" stop-opacity="0" />
+                                </radialGradient>
+                                <radialGradient id="IconifyId1955375ed8d98608a68" cx="0" cy="0" r="1"
+                                    gradientTransform="rotate(-57.265 20.217 -11.245)scale(3.0487 6.68733)"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3669D9" />
+                                    <stop offset="1" stop-color="#3669D9" stop-opacity="0" />
+                                </radialGradient>
+                                <radialGradient id="IconifyId1955375ed8d98608a69" cx="0" cy="0" r="1"
+                                    gradientTransform="matrix(-10.5257 0 0 -8.96905 18.988 20.132)"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset=".893" stop-color="#F7B44D" stop-opacity="0" />
+                                    <stop offset="1" stop-color="#F7B44D" />
+                                </radialGradient>
+                                <radialGradient id="IconifyId1955375ed8d98608a70" cx="0" cy="0" r="1"
+                                    gradientTransform="matrix(10.128 0 0 8.88135 14.078 20.132)"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset=".879" stop-color="#D2801F" stop-opacity="0" />
+                                    <stop offset=".983" stop-color="#D2801F" />
+                                </radialGradient>
+                                <filter id="IconifyId1955375ed8d98608a71" width="14.889" height="10.434" x="3.61"
+                                    y="2.362" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                    <feOffset dx="-.2" dy="-.2" />
+                                    <feGaussianBlur stdDeviation=".2" />
+                                    <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+                                    <feColorMatrix
+                                        values="0 0 0 0 0.317647 0 0 0 0 0.458824 0 0 0 0 0.886275 0 0 0 1 0" />
+                                    <feBlend in2="shape" result="effect1_innerShadow_18_1526" />
+                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                    <feOffset dx=".2" dy=".2" />
+                                    <feGaussianBlur stdDeviation=".2" />
+                                    <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+                                    <feColorMatrix
+                                        values="0 0 0 0 0.317647 0 0 0 0 0.458824 0 0 0 0 0.886275 0 0 0 1 0" />
+                                    <feBlend in2="effect1_innerShadow_18_1526" result="effect2_innerShadow_18_1526" />
+                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                    <feOffset dx="-.25" dy=".25" />
+                                    <feGaussianBlur stdDeviation=".25" />
+                                    <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+                                    <feColorMatrix
+                                        values="0 0 0 0 0.372549 0 0 0 0 0.607843 0 0 0 0 0.960784 0 0 0 1 0" />
+                                    <feBlend in2="effect2_innerShadow_18_1526" result="effect3_innerShadow_18_1526" />
+                                </filter>
+                                <filter id="IconifyId1955375ed8d98608a72" width="14.889" height="10.434" x="13.298"
+                                    y="2.362" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                    <feOffset dx="-.2" dy="-.2" />
+                                    <feGaussianBlur stdDeviation=".2" />
+                                    <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+                                    <feColorMatrix
+                                        values="0 0 0 0 0.317647 0 0 0 0 0.458824 0 0 0 0 0.886275 0 0 0 1 0" />
+                                    <feBlend in2="shape" result="effect1_innerShadow_18_1526" />
+                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                    <feOffset dx=".2" dy=".2" />
+                                    <feGaussianBlur stdDeviation=".2" />
+                                    <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+                                    <feColorMatrix
+                                        values="0 0 0 0 0.317647 0 0 0 0 0.458824 0 0 0 0 0.886275 0 0 0 1 0" />
+                                    <feBlend in2="effect1_innerShadow_18_1526" result="effect2_innerShadow_18_1526" />
+                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                    <feOffset dx="-.25" dy=".25" />
+                                    <feGaussianBlur stdDeviation=".25" />
+                                    <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+                                    <feColorMatrix
+                                        values="0 0 0 0 0.372549 0 0 0 0 0.607843 0 0 0 0 0.960784 0 0 0 1 0" />
+                                    <feBlend in2="effect2_innerShadow_18_1526" result="effect3_innerShadow_18_1526" />
+                                </filter>
+                                <filter id="IconifyId1955375ed8d98608a73" width="3.641" height="9" x="13.779" y="15.8"
+                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                    <feOffset dx="-.3" dy=".3" />
+                                    <feGaussianBlur stdDeviation=".3" />
+                                    <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+                                    <feColorMatrix
+                                        values="0 0 0 0 0.392157 0 0 0 0 0.164706 0 0 0 0 0.254902 0 0 0 1 0" />
+                                    <feBlend in2="shape" result="effect1_innerShadow_18_1526" />
+                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                    <feOffset dx=".2" dy="-.2" />
+                                    <feGaussianBlur stdDeviation=".2" />
+                                    <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+                                    <feColorMatrix
+                                        values="0 0 0 0 0.501961 0 0 0 0 0.333333 0 0 0 0 0.360784 0 0 0 1 0" />
+                                    <feBlend in2="effect1_innerShadow_18_1526" result="effect2_innerShadow_18_1526" />
+                                </filter>
+                            </defs>
+                        </g>
+                    </svg>
+                    <h4 class="benefits__article-title">Optimización para Motores de Búsqueda (SEO)</h4>
+                    <p class="benefits__article-text">Mejora tu posicionamiento en Google y aumenta tu tráfico web con
+                        buenas prácticas SEO.</p>
+                </article>
+                <article class="benefits__article">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 28 28">
+                        <g fill="none">
+                            <path fill="url(#IconifyId1955375ed8d98608a34)"
+                                d="M13.56 2.142a.75.75 0 0 1 .878 0c.643.464 2.088 1.312 3.897 2.041c1.81.73 3.922 1.317 5.913 1.317a.75.75 0 0 1 .75.75v7.752c0 3.027-1.703 5.841-3.838 7.95c-2.133 2.107-4.827 3.64-7.033 4.024l-.128.022l-.129-.022c-2.205-.385-4.9-1.917-7.033-4.024C4.703 19.843 3 17.029 3 14.002V6.25a.75.75 0 0 1 .75-.75c1.991 0 4.103-.587 5.914-1.317c1.808-.73 3.253-1.577 3.896-2.04" />
+                            <path fill="url(#IconifyId1955375ed8d98608a35)" fill-opacity=".5"
+                                d="M13.56 2.142a.75.75 0 0 1 .878 0c.643.464 2.088 1.312 3.897 2.041c1.81.73 3.922 1.317 5.913 1.317a.75.75 0 0 1 .75.75v7.752c0 3.027-1.703 5.841-3.838 7.95c-2.133 2.107-4.827 3.64-7.033 4.024l-.128.022l-.129-.022c-2.205-.385-4.9-1.917-7.033-4.024C4.703 19.843 3 17.029 3 14.002V6.25a.75.75 0 0 1 .75-.75c1.991 0 4.103-.587 5.914-1.317c1.808-.73 3.253-1.577 3.896-2.04" />
+                            <path fill="#404040" d="M27 20.5a6.5 6.5 0 1 1-13 0a6.5 6.5 0 0 1 13 0" />
+                            <path fill="url(#IconifyId1955375ed8d98608a36)"
+                                d="M27 20.5a6.5 6.5 0 1 1-13 0a6.5 6.5 0 0 1 13 0" />
+                            <path fill="#000" fill-rule="evenodd"
+                                d="M24.354 17.646a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L19 22.293l4.646-4.647a.5.5 0 0 1 .708 0"
+                                clip-rule="evenodd" />
+                            <path fill="url(#IconifyId1955375ed8d98608a37)" fill-rule="evenodd"
+                                d="M24.354 17.646a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L19 22.293l4.646-4.647a.5.5 0 0 1 .708 0"
+                                clip-rule="evenodd" />
+                            <defs>
+                                <radialGradient id="IconifyId1955375ed8d98608a34" cx="0" cy="0" r="1"
+                                    gradientTransform="rotate(54 8.463 -11.286)scale(57.4728 51.0658)"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset=".338" stop-color="#0FAFFF" />
+                                    <stop offset=".529" stop-color="#367AF2" />
+                                    <stop offset=".682" stop-color="#5750E2" />
+                                    <stop offset=".861" stop-color="#CC23D1" />
+                                </radialGradient>
+                                <radialGradient id="IconifyId1955375ed8d98608a35" cx="0" cy="0" r="1"
+                                    gradientTransform="matrix(0 8 -8.38074 0 20.5 22.5)" gradientUnits="userSpaceOnUse">
+                                    <stop offset=".5" stop-color="#1E1868" />
+                                    <stop offset="1" stop-color="#1E1868" stop-opacity="0" />
+                                </radialGradient>
+                                <linearGradient id="IconifyId1955375ed8d98608a36" x1="14.464" x2="23.436" y1="16.438"
+                                    y2="25.759" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#52D17C" />
+                                    <stop offset="1" stop-color="#22918B" />
+                                </linearGradient>
+                                <linearGradient id="IconifyId1955375ed8d98608a37" x1="18" x2="19.427" y1="18.112"
+                                    y2="24.829" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#fff" />
+                                    <stop offset="1" stop-color="#E3FFD9" />
+                                </linearGradient>
+                            </defs>
+                        </g>
+                    </svg>
+                    <h4 class="benefits__article-title">Tu Sitio Seguro con SSL</h4>
+                    <p class="benefits__article-text">Protege los datos de tus usuarios con un certificado SSL.
+                        Seguridad y confianza en tu página web.</p>
+                </article>
+                <article class="benefits__article">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 28 28">
+                        <g fill="none">
+                            <path fill="url(#IconifyId1955375ed8d98608a39)"
+                                d="M12.701 3.908c.532-1.077 2.069-1.077 2.6 0l2.692 5.453l6.017.874c1.19.173 1.664 1.635.804 2.474l-4.355 4.244l1.028 5.993c.204 1.184-1.04 2.087-2.103 1.528l-5.382-2.83l-5.382 2.83c-1.064.56-2.307-.344-2.104-1.528l1.028-5.993l-4.355-4.244c-.86-.84-.385-2.3.804-2.474l6.017-.874z" />
+                            <defs>
+                                <linearGradient id="IconifyId1955375ed8d98608a39" x1="25.25" x2="2.112" y1="25.124"
+                                    y2="3.296" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF6F47" />
+                                    <stop offset="1" stop-color="#FFCD0F" />
+                                </linearGradient>
+                            </defs>
+                        </g>
+                    </svg>
+                    <!-- <svg class="benefits__article-icon">
+                        <use xlink:href="./assets/sprites.svg#loupe"></use>
+                    </svg> -->
+                    <h4 class="benefits__article-title">Diseño Visual Impactante</h4>
+                    <p class="benefits__article-text">Crea una web atractiva y moderna, que haga que tus visitantes se
+                        queden más tiempo.</p>
+                </article>
+                <article class="benefits__article">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32">
+                        <g fill="none">
+                            <path fill="#7167A4"
+                                d="M9 2a3 3 0 0 0-3 3v2h19V5a3 3 0 0 0-3-3zm0 28a3 3 0 0 1-3-3v-2h19v2a3 3 0 0 1-3 3z" />
+                            <path fill="#321B41" d="M6 6h19v20H6z" />
+                            <path fill="#00A6ED"
+                                d="M13.5 10a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm-5 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm6 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z" />
+                            <path fill="#FF822D"
+                                d="M8.5 10a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm0 10a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm11-6a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z" />
+                            <path fill="#FCD53F"
+                                d="M18.5 10a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm-5 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm6 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z" />
+                        </g>
+                    </svg>
+                    <h4 class="benefits__article-title">¡Compatible con Móviles!</h4>
+                    <p class="benefits__article-text">Tu página se verá perfecta en cualquier dispositivo. Más clientes
+                        satisfechos, más conversiones.</p>
+                </article>
+                <article class="benefits__article">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 36 36">
+                        <path fill="#CCD6DD"
+                            d="M12 7.607L3 5.196c-1.657-.444-3 .539-3 2.197v20c0 1.656 1.343 3.359 3 3.804l9 2.411zm12 22.786l9 2.411c1.656.443 3-.54 3-2.196v-20c0-1.657-1.344-3.36-3-3.804l-9-2.411z" />
+                        <path fill="#E1E8ED" d="m24 30.392l-12 3.215v-26l12-3.215z" />
+                        <path fill="#55ACEE"
+                            d="M12 9.607L4 7.463c-1.104-.296-2 .36-2 1.464v18c0 1.104.896 2.24 2 2.535l8 2.145zm20-1.072l-8-2.144v22l8 2.144c1.104.296 2-.359 2-1.465v-18c0-1.103-.896-2.239-2-2.535" />
+                        <path fill="#88C9F9" d="m24 28.392l-12 3.215v-22l12-3.215z" />
+                        <path fill="#5C913B"
+                            d="M12 21.506c-.268.006-.595.104-.845.145c-.436.073-.329.517-.463.443a2.8 2.8 0 0 1-.812-.658c-.337-.394.25-.477.418-.622s-.316-.172-.485-.332c-.169-.159-.471.104-.739-.276c-.27-.376-.101-.79-.133-1.18c-.034-.39.436-.341.739-.334c.303.003.538.144.538.602c0 .456.37.708.269.146s.101-.657.235-.89c.134-.23.37-.55.672-1.04c.221-.358.389-.283.606-.164v-3.345c-.055-.044-.11-.09-.165-.113c-.303-.132.096.753-.139 1.109c-.237.356-.598.193-.97.094c-.369-.099-.713-.545-.443-1.007c.268-.462.782-.268 1.051-.653s-.957-.672-1.394-.941c-.438-.271-.963-.409-1.4-.146c-.437.264-1.373.133-1.743.186c-.37.054-.436-.369-.503-.693c-.067-.322-.653-.329-1.257-.338c-.606-.01-1.741.281-1.547 1.759c.068.514.605.124.707.036s.605.2.671.637c.068.439.035.887-.099 1.232c-.137.345.336 1.006.604 1.612c.269.605.573.686.707.723c.135.036.908.587.875.996c-.033.411.706.991 1.009 1.34s.494.662.887.846s.852 1.035 1.054 1.165c.155.1.418.451.576.58c-.208.242-.612.748-.612 1.029c0 .383.44 1.103.608 1.3c.167.196.65.442.751.85c.101.407-.07 1.646-.372 1.907c-.304.262-.414 1.043-.414 1.043s.107.293.465.124c.309-.144.776-.566 1.094-.801v-6.371z" />
+                        <path fill="#77B255"
+                            d="M12.268 17.413c-.1.016-.187.012-.268.011v-3.345c.254.065.512.317.707.736c.234.509.604.066.739.374c.134.308.875.758.505.742c-.371-.015-.741.008-.841.454c-.102.448.168.794-.102.828s-.37.142-.74.2m2.59 5.558c-.436-.074-.359-.023-.628-.599c-.268-.577-.431-.743-1.036-.656s-.583.136-.751-.163c-.072-.128-.241-.082-.443.031v6.37c.09-.114.17-.211.228-.267a13.4 13.4 0 0 0 1.466-1.646c.47-.621.3-.924.535-1.481c.236-.558.541-.617.944-1.145c.405-.53.122-.368-.315-.444M24 15.731V9.417c-.04.004-.068.012-.11.015c-.209.011-.482.135-.779.32c-.024-.005-.046-.016-.07-.021c-.896-.175-1.312 1.205-2.039 1.152c-.729-.053-1.7-.344-2.332.514c-.631.857-.777 1.53 0 1.294s1.312-1.425 1.7-1.089s.29.721-.632 1.105c-.922.385-1.918.817-2.452.96s-.655.534-.292.822s-.219.471-.826 1.02c-.607.547.146.512.656.705s.898-.323 1.117-.932c.217-.608 1.158-1.521 1.55-1.544s.392.197.318.602c-.013.071.001.103.011.138c-.17.54-.31 1.03-.365 1.306a3.3 3.3 0 0 0-.027.595c-.086.004-.183.021-.248.001c-.438-.129-1.434-.22-1.701.043c-.267.265-.412.502-.728.723c-.317.219-1.603 1.224-1.627 2.084c-.025.859-.049 1.83.461 1.721s1.749-.826 2.137-1.288s.921-.522 1.092-.156c.17.369.048.649-.12 1.354c-.171.708.11.963.381 1.468c.273.504.491.775.491 1.189c0 .412.389.723.97-.123a7 7 0 0 0 .536-.957c.409-.469.768-.923.758-1.096a14 14 0 0 1-.024-.624l.091-.22c.127-.293.241-.746.362-1.155l.02-.024c.237-.337.185-.353.58-.756c.264-.27.254-.512.214-.678c.105-.175.134-.28-.033-.235l-.016.004c-.002 0-.005.019-.006.014c-.023-.149-.206.003-.501.148c-.284.008-.566-.066-.668-.368c-.133-.396-.602-.996-.639-1.336c.003-.041.005-.077.01-.124a.17.17 0 0 1 .069-.088a.3.3 0 0 1 .112-.035c.041.111.075.279.086.464c.026.477.394.196.394.498c0 .303.53.492.661.548c.037.016.094-.027.159-.098c.031.011.06.033.093.037c.292.031.922-.984 1.117-1.164c.102-.095.104-.269.033-.394z" />
+                        <path fill="#5C913B"
+                            d="M27.634 20.221c-.053.44.184.201.606.705c.423.508-.104.394-.289.316c-.185-.08-.37-.131-.579-.518c-.213-.391 0-.695 0-1.027c0 0 .316.084.262.524m.362-.901c.389.166.114-.482.244-.841c.132-.356.316-.368.555-.363c.236.002.422-.191.581-.389c.157-.199.448-.454.422-.733s-.104-.482-.212-.843c-.105-.36.316-.368.502-.711c.184-.343 0 0 .421-.008c.422-.008.238-.058.316-.218c.08-.159.133-.327.054-.68c-.078-.353-.37-.1-.66-.177c-.289-.077.106-.425.132-.78s.397-.165.661-.125c.263.039.342.484.421.597c.081.112.895-.365 1.108-.641c.211-.275-.186-.291-.079-.403c.106-.111-.632-.337-.925-.469c-.289-.133-1.028-.367-1.318-.649c-.289-.283-1.396-.426-1.688-.337c-.291.086-.476-.143-.606-.406c-.131-.262-.686-.297-.844-.467s-.316.127-.529.16c-.21.035-.289.043-.554-.209c-.263-.252.08-.371-.288-.621c-.355-.238-.813-.182-1.71-.591v6.314c.157.014.309.036.364.051c.131.035.448.573.448.784s.158.828.291 1.195c.131.366.42.506.686.818c.264.312.394.137.394.137s-.105-.544-.105-.965c0-.424.316-.701.316-.701s.5.558.528.685c.026.128.421.656.449.876c.026.219.237.546.625.71m2.092-2.068c.184.08.976.171.554-.334c-.423-.506-.106-.299-.053-.738c.053-.44-.264-.524-.264-.524c0 .332-.211.638 0 1.026c.21.39-.423.49-.237.57m2.004 5.371c-.131-.217-.421-.385-.738-.461c-.315-.076-.29-.48-.606-.533c-.316-.055-.544-.389-.686-.512c-.312-.266-.106.209 0 .699c.106.488.501.246.869.586c.369.34.397.016.74.229c.342.211.475.52.804.578c.329.059-.25-.369-.383-.586m-3.088-1.432c.262.402.159.043.504-.016c.343-.059-.291-.561-.502-.799s-.42-.301-.605.049c-.21.399.342.364.603.766m2.403 2.579c-.133-.338-.518-.713-.675-.91c-.159-.193-.407-.312-.618-.279c-.212.031-.343-.092-.448-.361c-.106-.266-.29-.233-.449-.244c-.157-.012-.791.119-1.161.23c-.368.113-.537.252-.778.457c-.382.32-.17.105 0 .424c.168.318-.187 1.066-.213 1.543c-.027.477.676.031.939.039c.264.012.186-.189.396-.314c.212-.125.349-.129.579.172c.233.305.537.611.537.883c0 .27.834.947 1.151.852c.316-.098.501-.408.791-.635c.291-.225.186-.824.264-1.168c.081-.344-.185-.354-.315-.689" />
+                    </svg>
+                    <h4 class="benefits__article-title">Facilita la Navegación</h4>
+                    <p class="benefits__article-text">Ofrece una experiencia de usuario intuitiva y fácil de navegar
+                        para aumentar la satisfacción.</p>
+                </article>
+            </div>
+        </section>
+        <!---------------------------------------------->
+        <!---------------- Proyects -------------------->
+        <!---------------------------------------------->
+        <section>
+            <article class="proyects">
+                <div class="proyects__container">
+                    <img src="./assets/decoarte.png" alt="">
+                </div>
+                <div class="proyects__description">
+                    <h3 class="proyects__title">Decoarte SJB</h3>
+                    <p class="proyects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium
+                        error consectetur, doloribus veniam quas odit est quaerat recusandae. Ullam eaque doloremque eos
+                        possimus sint! Iure dolor exercitationem expedita pariatur!</p>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                    </div>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                    </div>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                    </div>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                    </div>
+                    <button class="proyects__btn btn">
+                        <a href="#contact">Contacto</a>
+                    </button>
+                </div>
+            </article>
+            <article class="proyects">
+                <div class="proyects__container">
+                    <img src="./assets/decoarte.png" alt="">
+                </div>
+                <div class="proyects__description">
+                    <h3 class="proyects__title">Decoarte SJB</h3>
+                    <p class="proyects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium
+                        error consectetur, doloribus veniam quas odit est quaerat recusandae. Ullam eaque doloremque eos
+                        possimus sint! Iure dolor exercitationem expedita pariatur!</p>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                    </div>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                    </div>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                    </div>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                    </div>
+                    <button class="proyects__btn btn">
+                        <a href="#contact">Contacto</a>
+                    </button>
+                </div>
+            </article>
+            <article class="proyects">
+                <div class="proyects__container">
+                    <img src="./assets/decoarte.png" alt="">
+                </div>
+                <div class="proyects__description">
+                    <h3 class="proyects__title">Decoarte SJB</h3>
+                    <p class="proyects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium
+                        error consectetur, doloribus veniam quas odit est quaerat recusandae. Ullam eaque doloremque eos
+                        possimus sint! Iure dolor exercitationem expedita pariatur!</p>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                    </div>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                    </div>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                    </div>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                    </div>
+                    <button class="proyects__btn btn">
+                        <a href="#contact">Contacto</a>
+                    </button>
+                </div>
+            </article>
+        </section>
+        <!---------------------------------------------->
+        <!----------------- Prices -------------------->
+        <!---------------------------------------------->
+        <section class="prices">
+            <h4 class="prices__title">Elige la mejor opción</h4>
+            <p class="prices__subtitle">Lorem ipsum dolor sita, amet consectetur adipisicing elit. Eligendi obcaecati at nisi doloremque voluptates ipsa nobis.</p>
+            <div class="prices__container">
+                <article class="prices__article">
+                    <svg class="prices__article-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16"><path fill="#6941C6" fill-rule="evenodd" d="m8.69 4.06l-.051-.01a3.8 3.8 0 0 0-1.27 0l-.051.01c-.405.075-.646.169-1.56.57l-4.66 2.05a5 5 0 0 0-.41.194c-.245.136-.432.296-.562.57c-.167.35-.167.758 0 1.11c.087.183.21.324.358.437c.159.123.243.164.614.327l4.66 2.05c.94.414 1.19.508 1.61.58a3.8 3.8 0 0 0 1.295-.004l.026-.005c.405-.075.646-.169 1.56-.57l4.66-2.05c.23-.102.306-.136.41-.194c.245-.136.432-.296.562-.57c.167-.35.167-.758 0-1.11c-.13-.274-.316-.433-.562-.569a5 5 0 0 0-.41-.194l-4.66-2.05c-.912-.402-1.15-.495-1.56-.57zm-1.16.977a2.8 2.8 0 0 1 .942 0c.352.06.692.209 1.37.509l4.66 2.05c.286.126.43.189.472.279a.29.29 0 0 1 0 .248c-.043.09-.186.153-.472.279l-4.66 2.05c-.681.3-1.02.449-1.37.509a2.8 2.8 0 0 1-.942 0c-.352-.06-.692-.209-1.37-.509L1.5 8.402c-.287-.126-.43-.189-.472-.279a.29.29 0 0 1 0-.248c.043-.09.186-.153.472-.279l4.66-2.05c.681-.3 1.02-.449 1.37-.509" clip-rule="evenodd"/>
+                    </svg>
+                    <p class="prices__article-title">Landing Page</p>
+                    <span class="prices__article-price">USD 50</span>
+                    <span class="prices__article-month">+ mantenimiento mensual</span>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <button class="btn prices__article-btn">
+                        <a href="#contact">Contactanos</a>
+                    </button>
+                </article>
+                <article class="prices__article">
+                    <svg class="prices__article-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16"><path fill="#6941C6" fill-rule="evenodd" d="m8.69 4.06l-.051-.01a3.8 3.8 0 0 0-1.27 0l-.051.01c-.405.075-.646.169-1.56.57l-4.66 2.05a5 5 0 0 0-.41.194c-.245.136-.432.296-.562.57c-.167.35-.167.758 0 1.11c.087.183.21.324.358.437c.159.123.243.164.614.327l4.66 2.05c.94.414 1.19.508 1.61.58a3.8 3.8 0 0 0 1.295-.004l.026-.005c.405-.075.646-.169 1.56-.57l4.66-2.05c.23-.102.306-.136.41-.194c.245-.136.432-.296.562-.57c.167-.35.167-.758 0-1.11c-.13-.274-.316-.433-.562-.569a5 5 0 0 0-.41-.194l-4.66-2.05c-.912-.402-1.15-.495-1.56-.57zm-1.16.977a2.8 2.8 0 0 1 .942 0c.352.06.692.209 1.37.509l4.66 2.05c.286.126.43.189.472.279a.29.29 0 0 1 0 .248c-.043.09-.186.153-.472.279l-4.66 2.05c-.681.3-1.02.449-1.37.509a2.8 2.8 0 0 1-.942 0c-.352-.06-.692-.209-1.37-.509L1.5 8.402c-.287-.126-.43-.189-.472-.279a.29.29 0 0 1 0-.248c.043-.09.186-.153.472-.279l4.66-2.05c.681-.3 1.02-.449 1.37-.509" clip-rule="evenodd"/>
+                    </svg>
+                    <p class="prices__article-title">Landing Page</p>
+                    <span class="prices__article-price">USD 50</span>
+                    <span class="prices__article-month">+ mantenimiento mensual</span>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <button class="btn prices__article-btn">
+                        <a href="#contact">Contactanos</a>
+                    </button>
+                </article>
+                <article class="prices__article">
+                    <svg class="prices__article-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16"><path fill="#6941C6" fill-rule="evenodd" d="m8.69 4.06l-.051-.01a3.8 3.8 0 0 0-1.27 0l-.051.01c-.405.075-.646.169-1.56.57l-4.66 2.05a5 5 0 0 0-.41.194c-.245.136-.432.296-.562.57c-.167.35-.167.758 0 1.11c.087.183.21.324.358.437c.159.123.243.164.614.327l4.66 2.05c.94.414 1.19.508 1.61.58a3.8 3.8 0 0 0 1.295-.004l.026-.005c.405-.075.646-.169 1.56-.57l4.66-2.05c.23-.102.306-.136.41-.194c.245-.136.432-.296.562-.57c.167-.35.167-.758 0-1.11c-.13-.274-.316-.433-.562-.569a5 5 0 0 0-.41-.194l-4.66-2.05c-.912-.402-1.15-.495-1.56-.57zm-1.16.977a2.8 2.8 0 0 1 .942 0c.352.06.692.209 1.37.509l4.66 2.05c.286.126.43.189.472.279a.29.29 0 0 1 0 .248c-.043.09-.186.153-.472.279l-4.66 2.05c-.681.3-1.02.449-1.37.509a2.8 2.8 0 0 1-.942 0c-.352-.06-.692-.209-1.37-.509L1.5 8.402c-.287-.126-.43-.189-.472-.279a.29.29 0 0 1 0-.248c.043-.09.186-.153.472-.279l4.66-2.05c.681-.3 1.02-.449 1.37-.509" clip-rule="evenodd"/>
+                    </svg>
+                    <p class="prices__article-title">Landing Page</p>
+                    <span class="prices__article-price">USD 50</span>
+                    <span class="prices__article-month">+ mantenimiento mensual</span>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <div class="prices__article-features">
+                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
+                        <span>Powerful, self-serve product</span>
+                    </div>
+                    <button class="btn prices__article-btn">
+                        <a href="#contact">Contactanos</a>
+                    </button>
+                </article>
+            </div>
+        </section>
+        <!---------------------------------------------->
+        <!----------------- Contact -------------------->
+        <!---------------------------------------------->
+        <section class="contact">
+            <h3 class="contact__title">Contactanos</h3>
+            <p class="contact__subtitle">Llena el formulario y nos contactaremos para poder conocer mejor tu negocio y sus necesidades.</p>
+            <form class="contact__form" action="">
+                <label class="contact__form-label" for="name">Nombre:</label>
+                <input class="contact__form-input" type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
+                <label class="contact__form-label" for="email">Email:</label>
+                <input class="contact__form-input" type="email" name="email" id="email" placeholder="Ingresa tu email" required>
+                <label class="contact__form-label" for="phone">Telefono:</label>
+                <input class="contact__form-input" type="tel" name="phone" id="phone" placeholder="Ingresa tu número de telefono">
+                <label class="contact__form-label" for="message">Mensaje:</label>
+                <textarea class="contact__form-input" name="message" id="message" cols="30" rows="10" placeholder="Ingresa tu mensaje" required></textarea>
+                <button class="contact__form-btn btn" type="submit">Enviar</button>
+            </form>
+        </section>
+        <!---------------------------------------------->
+        <!----------------- Footer --------------------->
+        <!---------------------------------------------->
+        <hr class="separator">
+        <footer class="footer">
+            <p>© 2025 Solwates. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+</body>
+</html>
