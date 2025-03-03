@@ -2,22 +2,34 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solwates | Compania de desarrollo de software</title>
     <link rel="stylesheet" href="./style/style.css">
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
+    <meta name="description" content="Solwates Company - Desarrollo de software a medida, diseño web y soluciones digitales para potenciar tu negocio. Creamos aplicaciones eficientes, seguras y escalables. ¡Contáctanos hoy!">
+    <meta name="author" content="Solwates Company">
+    <meta name="copyright" content="Solwates Company">
+    <meta name="robots" content="index, follow" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="theme-color" content="#1e7bbf">
+    <link rel="canonical" href="https://manz.dev/posts/el-lenguaje-html-parte-2.html">
 </head>
 <body class="container">
+    <!---------------------------------------------->
+    <!-------------- Header Section ---------------->
+    <!---------------------------------------------->
     <header class="header">
         <a href="index.html">
             <img class="header__logo" src="./assets/logo.png" alt="Logo de la Compania">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="#">Inicio</a></li>
-                <li class="header__nav-item"><a href="#">Proyectos</a></li>
-                <li class="header__nav-item"><a href="#">Precios</a></li>
-                <li class="header__nav-item"><a href="#">Contacto</a></li>
+                <li class="header__nav-item"><a href="#home">Inicio</a></li>
+                <li class="header__nav-item"><a href="#proyects">Proyectos</a></li>
+                <li class="header__nav-item"><a href="#prices">Precios</a></li>
+                <li class="header__nav-item"><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
         <label class="header__burger" for="burger">
@@ -27,20 +39,20 @@
             <span></span>
         </label>
         <button class="header__btn">
-            <a class="btn" href="#contacto">Contacto</a>
+            <a class="btn" href="#contact">Contactanos</a>
         </button>
     </header>
     <main>
         <!---------------------------------------------->
         <!-------------- Hero Section ------------------>
         <!---------------------------------------------->
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="hero__content">
                 <h2 class="hero__title">Transformamos tus ideas en <br> <span>soluciones digitales eficientes</span>
                 </h2>
                 <p class="hero__subtitle"></p>
                 <button class="btn hero__btn">
-                    <a class="hero__btn-link" href="#contacto">Contacto</a>
+                    <a class="hero__btn-link" href="#contacto">Contactanos</a>
                 </button>
             </div>
             <picture class="hero__img">
@@ -77,7 +89,7 @@
                         <img src="./assets/facebook-pixel.png" alt="Logo de facebook pixel">
                     </div>
                     <div class="slide slide-3">
-                        <img src="./assets/semrush.png" alt="Logo de semrush">
+                        <img src="./assets/semrush.webp" alt="Logo de semrush">
                     </div>
                     <div class="slide slide-4">
                         <img src="./assets/mailchimp.png" alt="Logo de mailchimp">
@@ -91,7 +103,7 @@
                         <img src="./assets/facebook-pixel.png" alt="Logo de facebook pixel">
                     </div>
                     <div class="slide slide-3">
-                        <img src="./assets/semrush.png" alt="Logo de semrush">
+                        <img src="./assets/semrush.webp" alt="Logo de semrush">
                     </div>
                     <div class="slide slide-4">
                         <img src="./assets/mailchimp.png" alt="Logo de mailchimp">
@@ -105,8 +117,8 @@
         <section class="benefits">
             <div class="benefits__content">
                 <h3 class="benefits__title">Beneficios</h3>
-                <p class="benefits__subtitle">Un servicio realizado a medida adaptandose perfectamente a las necesidades
-                    del cliente, optimizando procesos, mejorando la eficiencia y brindando una ventaja competitiva en el
+                <p class="benefits__subtitle">Un servicio realizado a medida adaptandose perfectamente a tus
+                    necesidades, optimizando procesos, mejorando la eficiencia y brindando una ventaja competitiva en el
                     mercado.</p>
             </div>
             <div class="benefits__articles">
@@ -375,8 +387,8 @@
                         <use xlink:href="./assets/sprites.svg#loupe"></use>
                     </svg> -->
                     <h4 class="benefits__article-title">Diseño Visual Impactante</h4>
-                    <p class="benefits__article-text">Crea una web atractiva y moderna, que haga que tus visitantes se
-                        queden más tiempo.</p>
+                    <p class="benefits__article-text">Crea una web atractiva y moderna, que haga que tus visitantes
+                        conecten con tu negocio.</p>
                 </article>
                 <article class="benefits__article">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32">
@@ -421,6 +433,35 @@
         <!---------------- Proyects -------------------->
         <!---------------------------------------------->
         <section>
+            <article id="proyects" class="proyects">
+                <div class="proyects__container">
+                    <img src="./assets/decoarte.png" alt="">
+                </div>
+                <div class="proyects__description">
+                    <h3 class="proyects__title">Decoarte SJB</h3>
+                    <p class="proyects__text">Empresa especializada en la decoración de eventos y espacios, tanto para
+                        empresas como para particulares.</p>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Mayor alcance y visibilidad online.</p>
+                    </div>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Mejor reputación y confianza hacia sus clientes</p>
+                    </div>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Conexión directa con potenciales clientes</p>
+                    </div>
+                    <div class="proyects__features">
+                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
+                        <p class="proyects__features-text">Aumento del reconocimiento profesional online</p>
+                    </div>
+                    <button class="proyects__btn btn">
+                        <a href="#contact">Contactanos</a>
+                    </button>
+                </div>
+            </article>
             <article class="proyects">
                 <div class="proyects__container">
                     <img src="./assets/decoarte.png" alt="">
@@ -428,8 +469,7 @@
                 <div class="proyects__description">
                     <h3 class="proyects__title">Decoarte SJB</h3>
                     <p class="proyects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium
-                        error consectetur, doloribus veniam quas odit est quaerat recusandae. Ullam eaque doloremque eos
-                        possimus sint! Iure dolor exercitationem expedita pariatur!</p>
+                        ewqsaaaaaaae</p>
                     <div class="proyects__features">
                         <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
                         <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
@@ -458,38 +498,7 @@
                 <div class="proyects__description">
                     <h3 class="proyects__title">Decoarte SJB</h3>
                     <p class="proyects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium
-                        error consectetur, doloribus veniam quas odit est quaerat recusandae. Ullam eaque doloremque eos
-                        possimus sint! Iure dolor exercitationem expedita pariatur!</p>
-                    <div class="proyects__features">
-                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
-                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
-                    </div>
-                    <div class="proyects__features">
-                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
-                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
-                    </div>
-                    <div class="proyects__features">
-                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
-                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
-                    </div>
-                    <div class="proyects__features">
-                        <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
-                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
-                    </div>
-                    <button class="proyects__btn btn">
-                        <a href="#contact">Contacto</a>
-                    </button>
-                </div>
-            </article>
-            <article class="proyects">
-                <div class="proyects__container">
-                    <img src="./assets/decoarte.png" alt="">
-                </div>
-                <div class="proyects__description">
-                    <h3 class="proyects__title">Decoarte SJB</h3>
-                    <p class="proyects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium
-                        error consectetur, doloribus veniam quas odit est quaerat recusandae. Ullam eaque doloremque eos
-                        possimus sint! Iure dolor exercitationem expedita pariatur!</p>
+                        ewqsaaaaaaae</p>
                     <div class="proyects__features">
                         <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
                         <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
@@ -515,95 +524,102 @@
         <!---------------------------------------------->
         <!----------------- Prices -------------------->
         <!---------------------------------------------->
-        <section class="prices">
+        <section id="prices" class="prices">
             <h4 class="prices__title">Elige la mejor opción</h4>
-            <p class="prices__subtitle">Lorem ipsum dolor sita, amet consectetur adipisicing elit. Eligendi obcaecati at nisi doloremque voluptates ipsa nobis.</p>
+            <p class="prices__subtitle">Desde una simple presencia online hasta una tienda completa, tenemos lo que
+                necesitas.</p>
             <div class="prices__container">
                 <article class="prices__article">
-                    <svg class="prices__article-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16"><path fill="#6941C6" fill-rule="evenodd" d="m8.69 4.06l-.051-.01a3.8 3.8 0 0 0-1.27 0l-.051.01c-.405.075-.646.169-1.56.57l-4.66 2.05a5 5 0 0 0-.41.194c-.245.136-.432.296-.562.57c-.167.35-.167.758 0 1.11c.087.183.21.324.358.437c.159.123.243.164.614.327l4.66 2.05c.94.414 1.19.508 1.61.58a3.8 3.8 0 0 0 1.295-.004l.026-.005c.405-.075.646-.169 1.56-.57l4.66-2.05c.23-.102.306-.136.41-.194c.245-.136.432-.296.562-.57c.167-.35.167-.758 0-1.11c-.13-.274-.316-.433-.562-.569a5 5 0 0 0-.41-.194l-4.66-2.05c-.912-.402-1.15-.495-1.56-.57zm-1.16.977a2.8 2.8 0 0 1 .942 0c.352.06.692.209 1.37.509l4.66 2.05c.286.126.43.189.472.279a.29.29 0 0 1 0 .248c-.043.09-.186.153-.472.279l-4.66 2.05c-.681.3-1.02.449-1.37.509a2.8 2.8 0 0 1-.942 0c-.352-.06-.692-.209-1.37-.509L1.5 8.402c-.287-.126-.43-.189-.472-.279a.29.29 0 0 1 0-.248c.043-.09.186-.153.472-.279l4.66-2.05c.681-.3 1.02-.449 1.37-.509" clip-rule="evenodd"/>
+                    <svg class="prices__article-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                        viewBox="0 0 16 16">
+                        <path fill="#6941C6" fill-rule="evenodd"
+                            d="m8.69 4.06l-.051-.01a3.8 3.8 0 0 0-1.27 0l-.051.01c-.405.075-.646.169-1.56.57l-4.66 2.05a5 5 0 0 0-.41.194c-.245.136-.432.296-.562.57c-.167.35-.167.758 0 1.11c.087.183.21.324.358.437c.159.123.243.164.614.327l4.66 2.05c.94.414 1.19.508 1.61.58a3.8 3.8 0 0 0 1.295-.004l.026-.005c.405-.075.646-.169 1.56-.57l4.66-2.05c.23-.102.306-.136.41-.194c.245-.136.432-.296.562-.57c.167-.35.167-.758 0-1.11c-.13-.274-.316-.433-.562-.569a5 5 0 0 0-.41-.194l-4.66-2.05c-.912-.402-1.15-.495-1.56-.57zm-1.16.977a2.8 2.8 0 0 1 .942 0c.352.06.692.209 1.37.509l4.66 2.05c.286.126.43.189.472.279a.29.29 0 0 1 0 .248c-.043.09-.186.153-.472.279l-4.66 2.05c-.681.3-1.02.449-1.37.509a2.8 2.8 0 0 1-.942 0c-.352-.06-.692-.209-1.37-.509L1.5 8.402c-.287-.126-.43-.189-.472-.279a.29.29 0 0 1 0-.248c.043-.09.186-.153.472-.279l4.66-2.05c.681-.3 1.02-.449 1.37-.509"
+                            clip-rule="evenodd" />
                     </svg>
                     <p class="prices__article-title">Landing Page</p>
                     <span class="prices__article-price">USD 50</span>
                     <span class="prices__article-month">+ mantenimiento mensual</span>
                     <div class="prices__article-features">
                         <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
+                        <span>Diseño moderno y responsive</span>
                     </div>
                     <div class="prices__article-features">
                         <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
+                        <span>Página optimizada para conversión</span>
                     </div>
                     <div class="prices__article-features">
                         <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
+                        <span>Formulario de contacto integrado</span>
                     </div>
                     <div class="prices__article-features">
                         <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
-                    </div>
-                    <div class="prices__article-features">
-                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
+                        <span>Velocidad optimizada y SEO básico</span>
                     </div>
                     <button class="btn prices__article-btn">
                         <a href="#contact">Contactanos</a>
                     </button>
                 </article>
                 <article class="prices__article">
-                    <svg class="prices__article-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16"><path fill="#6941C6" fill-rule="evenodd" d="m8.69 4.06l-.051-.01a3.8 3.8 0 0 0-1.27 0l-.051.01c-.405.075-.646.169-1.56.57l-4.66 2.05a5 5 0 0 0-.41.194c-.245.136-.432.296-.562.57c-.167.35-.167.758 0 1.11c.087.183.21.324.358.437c.159.123.243.164.614.327l4.66 2.05c.94.414 1.19.508 1.61.58a3.8 3.8 0 0 0 1.295-.004l.026-.005c.405-.075.646-.169 1.56-.57l4.66-2.05c.23-.102.306-.136.41-.194c.245-.136.432-.296.562-.57c.167-.35.167-.758 0-1.11c-.13-.274-.316-.433-.562-.569a5 5 0 0 0-.41-.194l-4.66-2.05c-.912-.402-1.15-.495-1.56-.57zm-1.16.977a2.8 2.8 0 0 1 .942 0c.352.06.692.209 1.37.509l4.66 2.05c.286.126.43.189.472.279a.29.29 0 0 1 0 .248c-.043.09-.186.153-.472.279l-4.66 2.05c-.681.3-1.02.449-1.37.509a2.8 2.8 0 0 1-.942 0c-.352-.06-.692-.209-1.37-.509L1.5 8.402c-.287-.126-.43-.189-.472-.279a.29.29 0 0 1 0-.248c.043-.09.186-.153.472-.279l4.66-2.05c.681-.3 1.02-.449 1.37-.509" clip-rule="evenodd"/>
+                    <svg class="prices__article-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                        viewBox="0 0 16 16">
+                        <path fill="#6941C6" fill-rule="evenodd"
+                            d="M8.69.062L8.639.053a3.8 3.8 0 0 0-1.27 0c-.026.004-.026.004-.051.01c-.405.074-.646.168-1.56.57l-4.66 2.05a5 5 0 0 0-.41.193c-.245.136-.432.296-.562.57c-.167.35-.167.758 0 1.11c.087.183.21.324.358.437c.159.123.243.164.614.327l4.66 2.05c.94.414 1.19.508 1.61.58a3.8 3.8 0 0 0 1.295-.004l.026-.005c.405-.075.646-.169 1.56-.57l4.66-2.05c.23-.102.306-.136.41-.194c.245-.136.432-.296.562-.57c.167-.35.167-.758 0-1.11c-.13-.274-.316-.433-.562-.569a5 5 0 0 0-.41-.194l-4.66-2.05c-.912-.402-1.15-.495-1.56-.57zm-1.16.977a2.8 2.8 0 0 1 .942 0c.352.06.692.21 1.37.51l4.66 2.05c.286.125.43.188.472.278a.29.29 0 0 1 0 .248c-.043.09-.186.153-.472.28l-4.66 2.05c-.681.3-1.02.448-1.37.508a2.8 2.8 0 0 1-.942 0c-.352-.06-.692-.209-1.37-.509L1.5 4.404c-.287-.126-.43-.189-.472-.279a.29.29 0 0 1 0-.248c.043-.09.186-.153.472-.279l4.66-2.05c.681-.3 1.02-.449 1.37-.509"
+                            clip-rule="evenodd" />
+                        <path fill="#6941C6"
+                            d="M.036 12.3a.49.49 0 0 1 .65-.296l5.72 2.43c.68.289.948.399 1.22.443c.25.04.507.04.758 0c.27-.044.538-.154 1.22-.443l5.72-2.43a.49.49 0 0 1 .65.296a.543.543 0 0 1-.28.69l-5.77 2.45c-.602.256-.982.417-1.38.482c-.351.057-.71.057-1.06 0c-.396-.065-.776-.226-1.38-.482l-5.77-2.45a.543.543 0 0 1-.278-.69z" />
+                        <path fill="#6941C6"
+                            d="M.036 8.33a.49.49 0 0 1 .65-.296l5.72 2.43c.68.289.948.399 1.22.443c.25.04.507.04.758 0c.27-.044.538-.154 1.22-.443l5.72-2.43a.49.49 0 0 1 .65.296a.543.543 0 0 1-.28.69l-5.77 2.45c-.602.256-.982.417-1.38.482c-.351.057-.71.057-1.06 0c-.396-.065-.776-.226-1.38-.482L.335 9.02a.543.543 0 0 1-.278-.69z" />
                     </svg>
-                    <p class="prices__article-title">Landing Page</p>
-                    <span class="prices__article-price">USD 50</span>
+                    <p class="prices__article-title">Desarrollo a medida</p>
+                    <span class="prices__article-price">Consultar</span>
                     <span class="prices__article-month">+ mantenimiento mensual</span>
                     <div class="prices__article-features">
                         <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
+                        <span>Diseño y funcionalidades a medida</span>
                     </div>
                     <div class="prices__article-features">
                         <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
+                        <span>Integraciones avanzadas (APIs, CRM, etc.)</span>
                     </div>
                     <div class="prices__article-features">
                         <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
+                        <span>Optimización SEO y rendimiento web</span>
                     </div>
                     <div class="prices__article-features">
                         <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
-                    </div>
-                    <div class="prices__article-features">
-                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
+                        <span>Soporte y mantenimiento personalizado</span>
                     </div>
                     <button class="btn prices__article-btn">
                         <a href="#contact">Contactanos</a>
                     </button>
                 </article>
                 <article class="prices__article">
-                    <svg class="prices__article-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16"><path fill="#6941C6" fill-rule="evenodd" d="m8.69 4.06l-.051-.01a3.8 3.8 0 0 0-1.27 0l-.051.01c-.405.075-.646.169-1.56.57l-4.66 2.05a5 5 0 0 0-.41.194c-.245.136-.432.296-.562.57c-.167.35-.167.758 0 1.11c.087.183.21.324.358.437c.159.123.243.164.614.327l4.66 2.05c.94.414 1.19.508 1.61.58a3.8 3.8 0 0 0 1.295-.004l.026-.005c.405-.075.646-.169 1.56-.57l4.66-2.05c.23-.102.306-.136.41-.194c.245-.136.432-.296.562-.57c.167-.35.167-.758 0-1.11c-.13-.274-.316-.433-.562-.569a5 5 0 0 0-.41-.194l-4.66-2.05c-.912-.402-1.15-.495-1.56-.57zm-1.16.977a2.8 2.8 0 0 1 .942 0c.352.06.692.209 1.37.509l4.66 2.05c.286.126.43.189.472.279a.29.29 0 0 1 0 .248c-.043.09-.186.153-.472.279l-4.66 2.05c-.681.3-1.02.449-1.37.509a2.8 2.8 0 0 1-.942 0c-.352-.06-.692-.209-1.37-.509L1.5 8.402c-.287-.126-.43-.189-.472-.279a.29.29 0 0 1 0-.248c.043-.09.186-.153.472-.279l4.66-2.05c.681-.3 1.02-.449 1.37-.509" clip-rule="evenodd"/>
+                    <svg class="prices__article-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                        viewBox="0 0 16 16">
+                        <path fill="#6941C6" fill-rule="evenodd"
+                            d="m8.69 2.06l-.051-.01a3.8 3.8 0 0 0-1.27 0l-.051.01c-.405.075-.646.169-1.56.57l-4.66 2.05a5 5 0 0 0-.41.194c-.245.136-.432.296-.562.57c-.167.35-.167.758 0 1.11c.087.183.21.324.358.437c.159.123.243.164.614.327l4.66 2.05c.94.414 1.19.508 1.61.58a3.8 3.8 0 0 0 1.295-.004l.026-.005c.405-.075.646-.17 1.56-.57l4.66-2.05c.23-.102.306-.136.41-.194c.245-.136.432-.296.562-.57c.167-.35.167-.758 0-1.11c-.13-.274-.316-.433-.562-.57a5 5 0 0 0-.41-.193l-4.66-2.05c-.912-.402-1.15-.495-1.56-.57zm-1.16.977a2.8 2.8 0 0 1 .942 0c.352.06.692.209 1.37.509l4.66 2.05c.286.126.43.189.472.279a.29.29 0 0 1 0 .248c-.043.09-.186.153-.472.279l-4.66 2.05c-.681.3-1.02.449-1.37.509a2.8 2.8 0 0 1-.942 0c-.352-.06-.692-.209-1.37-.509L1.5 6.402c-.287-.126-.43-.189-.472-.279a.29.29 0 0 1 0-.248c.043-.09.186-.153.472-.279l4.66-2.05c.681-.3 1.02-.449 1.37-.509"
+                            clip-rule="evenodd" />
+                        <path fill="#6941C6"
+                            d="M.036 10.3a.49.49 0 0 1 .65-.296l5.72 2.43c.68.289.948.399 1.22.443c.25.04.507.04.758 0c.27-.044.538-.154 1.22-.443l5.72-2.43a.49.49 0 0 1 .65.296a.543.543 0 0 1-.28.69l-5.77 2.45c-.602.256-.982.417-1.38.482c-.351.057-.71.057-1.06 0c-.396-.065-.776-.226-1.38-.482l-5.77-2.45a.543.543 0 0 1-.278-.69z" />
                     </svg>
-                    <p class="prices__article-title">Landing Page</p>
-                    <span class="prices__article-price">USD 50</span>
+                    <p class="prices__article-title">Ecommerce</p>
+                    <span class="prices__article-price">USD 100</span>
                     <span class="prices__article-month">+ mantenimiento mensual</span>
                     <div class="prices__article-features">
                         <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
+                        <span>Tienda online completa</span>
                     </div>
                     <div class="prices__article-features">
                         <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
+                        <span>Hasta 10 productos iniciales cargados</span>
                     </div>
                     <div class="prices__article-features">
                         <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
+                        <span>Pasarelas de pago integradas</span>
                     </div>
                     <div class="prices__article-features">
                         <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
-                    </div>
-                    <div class="prices__article-features">
-                        <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
-                        <span>Powerful, self-serve product</span>
+                        <span>Panel de administración para gestionar productos</span>
                     </div>
                     <button class="btn prices__article-btn">
                         <a href="#contact">Contactanos</a>
@@ -614,18 +630,25 @@
         <!---------------------------------------------->
         <!----------------- Contact -------------------->
         <!---------------------------------------------->
-        <section class="contact">
+        <section id="contact" class="contact">
             <h3 class="contact__title">Contactanos</h3>
-            <p class="contact__subtitle">Llena el formulario y nos contactaremos para poder conocer mejor tu negocio y sus necesidades.</p>
-            <form class="contact__form" action="">
+            <p class="contact__subtitle">Llena el formulario y nos contactaremos para poder conocer mejor tu negocio y
+                sus necesidades.</p>
+            <form class="contact__form" action="https://formsubmit.co/brianexequielputallaz@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://tu-sitio.com/gracias.html">
+                <input type="hidden" name="_captcha" value="false">
                 <label class="contact__form-label" for="name">Nombre:</label>
-                <input class="contact__form-input" type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
+                <input class="contact__form-input" type="text" name="name" id="name" placeholder="Ingresa tu nombre"
+                    required>
                 <label class="contact__form-label" for="email">Email:</label>
-                <input class="contact__form-input" type="email" name="email" id="email" placeholder="Ingresa tu email" required>
-                <label class="contact__form-label" for="phone">Telefono:</label>
-                <input class="contact__form-input" type="tel" name="phone" id="phone" placeholder="Ingresa tu número de telefono">
+                <input class="contact__form-input" type="email" name="email" id="email" placeholder="Ingresa tu email"
+                    required>
+                <label class="contact__form-label" for="phone">Teléfono:</label>
+                <input class="contact__form-input" type="tel" name="phone" id="phone"
+                    placeholder="Ingresa tu número de teléfono">
                 <label class="contact__form-label" for="message">Mensaje:</label>
-                <textarea class="contact__form-input" name="message" id="message" cols="30" rows="10" placeholder="Ingresa tu mensaje" required></textarea>
+                <textarea class="contact__form-input" name="message" id="message" cols="30" rows="10"
+                    placeholder="Ingresa tu mensaje" required></textarea>
                 <button class="contact__form-btn btn" type="submit">Enviar</button>
             </form>
         </section>
