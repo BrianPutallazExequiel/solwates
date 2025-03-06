@@ -226,6 +226,12 @@ body {
     margin: 0 auto;
     position: relative;
 }
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
 
 /* ------------------------------------------------------- */
 /* ------------------Header section----------------------- */
@@ -515,7 +521,7 @@ main {
 
 .benefits__articles {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
@@ -772,6 +778,26 @@ main {
     width: 100%;
     padding: .5rem;
     margin-top: 1rem;
+}
+.confirmation-message {
+    display: none;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* ------------------------------------------------------- */

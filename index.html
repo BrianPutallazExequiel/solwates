@@ -2,9 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solwates | Compania de desarrollo de software</title>
+    <title>Solwates | Compañía de desarrollo de software</title>
     <meta name="description"
         content="Solwates Company - Desarrollo de software a medida, diseño web y soluciones digitales para potenciar tu negocio. Creamos aplicaciones eficientes, seguras y escalables. ¡Contáctanos hoy!">
     <meta name="author" content="Solwates Company">
@@ -37,11 +36,11 @@
     <!---------------------------------------------->
     <!-------------- Header Section ---------------->
     <!---------------------------------------------->
-    <header class="header">
-        <a href="index.html">
-            <img class="header__logo" src="./assets/logo.png" alt="Logo de la Compania">
+    <header class="header" role="banner">
+        <a href="index.html" aria-label="Inicio - Volver a página principal">
+            <img class="header__logo" src="./assets/logo.png" alt="Logo de Solwates">
         </a>
-        <nav class="header__nav">
+        <nav role="navigation" class="header__nav" aria-label="Menú principal">
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a href="#home">Inicio</a></li>
                 <li class="header__nav-item"><a href="#proyects">Proyectos</a></li>
@@ -49,27 +48,24 @@
                 <li class="header__nav-item"><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
-        <label class="header__burger" for="burger">
-            <input type="checkbox" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <button class="header__btn">
-            <a class="btn" href="#contact">Contactanos</a>
+        <button class="header__burger" aria-label="Menú móvil" aria-expanded="false">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
         </button>
+        <a class="btn header__btn" href="#contact">Contáctanos</a>
     </header>
-    <main>
+    <main role="main">
         <!---------------------------------------------->
         <!-------------- Hero Section ------------------>
         <!---------------------------------------------->
-        <section id="home" class="hero">
+        <section id="home" class="hero" aria-labelledby="hero-title">
             <div class="hero__content">
                 <h2 class="hero__title">Transformamos tus ideas en <br> <span>soluciones digitales eficientes</span>
                 </h2>
                 <p class="hero__subtitle"></p>
                 <button class="btn hero__btn">
-                    <a class="hero__btn-link" href="#contacto">Contactanos</a>
+                    <a class="hero__btn-link" href="#contacto">Contáctanos</a>
                 </button>
             </div>
             <picture class="hero__img">
@@ -452,7 +448,7 @@
         <section>
             <article id="proyects" class="proyects">
                 <div class="proyects__container">
-                    <img src="./assets/decoarte.png" alt="">
+                    <img src="./assets/decoarte.png" alt="Proyecto web de empresa de decoarte SJB">
                 </div>
                 <div class="proyects__description">
                     <h3 class="proyects__title">Decoarte SJB</h3>
@@ -475,65 +471,63 @@
                         <p class="proyects__features-text">Aumento del reconocimiento profesional online</p>
                     </div>
                     <button class="proyects__btn btn">
-                        <a href="#contact">Contactanos</a>
+                        <a href="#contact">Contáctanos</a>
                     </button>
                 </div>
             </article>
             <article class="proyects">
                 <div class="proyects__container">
-                    <img src="./assets/decoarte.png" alt="">
+                    <img src="./assets/brian-exequieil-web.png" alt="Proyecto web de marca personal Brian Exequiel">
                 </div>
                 <div class="proyects__description">
-                    <h3 class="proyects__title">Decoarte SJB</h3>
-                    <p class="proyects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium
-                        ewqsaaaaaaae</p>
+                    <h3 class="proyects__title">Brian Exequiel</h3>
+                    <p class="proyects__text">Portfolio profesional y personal de Brian Exequiel, desarrollador web y diseñador UX/UI, especializado en crear experiencias digitales impactantes.</p>
                     <div class="proyects__features">
                         <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
-                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                        <p class="proyects__features-text">Mayor visibilidad y alcance profesional</p>
                     </div>
                     <div class="proyects__features">
                         <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
-                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                        <p class="proyects__features-text">Mejor reputación y credibilidad</p>
                     </div>
                     <div class="proyects__features">
                         <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
-                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                        <p class="proyects__features-text">Conexión directa con empleadores y clientes</p>
                     </div>
                     <div class="proyects__features">
                         <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
-                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                        <p class="proyects__features-text">Aumento del reconocimiento en la industria</p>
                     </div>
                     <button class="proyects__btn btn">
-                        <a href="#contact">Contacto</a>
+                        <a href="#contact">Contáctanos</a>
                     </button>
                 </div>
             </article>
             <article class="proyects">
                 <div class="proyects__container">
-                    <img src="./assets/decoarte.png" alt="">
+                    <img src="./assets/aerofly.png" alt="">
                 </div>
                 <div class="proyects__description">
-                    <h3 class="proyects__title">Decoarte SJB</h3>
-                    <p class="proyects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium
-                        ewqsaaaaaaae</p>
+                    <h3 class="proyects__title">Air Fly</h3>
+                    <p class="proyects__text">AirFly es una agencia de viajes que ofrece los mejores destinos del mundo, ofreciendo experiencias únicas y personalizadas para cada aventura.</p>
                     <div class="proyects__features">
                         <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
-                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                        <p class="proyects__features-text">Mayor alcance y captación de clientes</p>
                     </div>
                     <div class="proyects__features">
                         <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
-                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                        <p class="proyects__features-text">Más confianza y seguridad para los clientes</p>
                     </div>
                     <div class="proyects__features">
                         <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
-                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                        <p class="proyects__features-text">Canal de ventas disponible 24/7</p>
                     </div>
                     <div class="proyects__features">
                         <img class="proyects__features-icon" src="./assets/check-icon.png" alt="">
-                        <p class="proyects__features-text">Powerful, self-serve product and growth analytics</p>
+                        <p class="proyects__features-text">Diferenciación y posicionamiento en el sector</p>
                     </div>
                     <button class="proyects__btn btn">
-                        <a href="#contact">Contacto</a>
+                        <a href="#contact">Contáctanos</a>
                     </button>
                 </div>
             </article>
@@ -554,7 +548,7 @@
                             clip-rule="evenodd" />
                     </svg>
                     <p class="prices__article-title">Landing Page</p>
-                    <span class="prices__article-price">USD 50</span>
+                    <span class="prices__article-price">USD 499</span>
                     <span class="prices__article-month">+ mantenimiento mensual</span>
                     <div class="prices__article-features">
                         <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
@@ -620,7 +614,7 @@
                             d="M.036 10.3a.49.49 0 0 1 .65-.296l5.72 2.43c.68.289.948.399 1.22.443c.25.04.507.04.758 0c.27-.044.538-.154 1.22-.443l5.72-2.43a.49.49 0 0 1 .65.296a.543.543 0 0 1-.28.69l-5.77 2.45c-.602.256-.982.417-1.38.482c-.351.057-.71.057-1.06 0c-.396-.065-.776-.226-1.38-.482l-5.77-2.45a.543.543 0 0 1-.278-.69z" />
                     </svg>
                     <p class="prices__article-title">Ecommerce</p>
-                    <span class="prices__article-price">USD 100</span>
+                    <span class="prices__article-price">USD 979</span>
                     <span class="prices__article-month">+ mantenimiento mensual</span>
                     <div class="prices__article-features">
                         <img class="prices__article-features-icon" src="./assets/check-icon.png" alt="">
@@ -648,26 +642,37 @@
         <!----------------- Contact -------------------->
         <!---------------------------------------------->
         <section id="contact" class="contact">
-            <h3 class="contact__title">Contactanos</h3>
-            <p class="contact__subtitle">Llena el formulario y nos contactaremos para poder conocer mejor tu negocio y
-                sus necesidades.</p>
-            <form class="contact__form" action="https://formsubmit.co/brianexequielputallaz@gmail.com" method="POST">
-                <input type="hidden" name="_next" value="https://tu-sitio.com/gracias.html">
-                <input type="hidden" name="_captcha" value="false">
+            <h3 class="contact__title">Contáctanos</h3>
+            <p class="contact__subtitle">Llena el formulario y nos contactaremos para conocer mejor tu negocio y sus
+                necesidades.</p>
+            <form class="contact__form" action="https://formsubmit.co/brianexequielputallaz@gmail.com" method="POST"
+                id="contactForm" novalidate>
+
                 <label class="contact__form-label" for="name">Nombre:</label>
                 <input class="contact__form-input" type="text" name="name" id="name" placeholder="Ingresa tu nombre"
                     required>
+                <span class="error-message" id="error-name"></span>
+
                 <label class="contact__form-label" for="email">Email:</label>
                 <input class="contact__form-input" type="email" name="email" id="email" placeholder="Ingresa tu email"
                     required>
+                <span class="error-message" id="error-email"></span>
+
                 <label class="contact__form-label" for="phone">Teléfono:</label>
                 <input class="contact__form-input" type="tel" name="phone" id="phone"
                     placeholder="Ingresa tu número de teléfono">
+                <span class="error-message" id="error-phone"></span>
+
                 <label class="contact__form-label" for="message">Mensaje:</label>
                 <textarea class="contact__form-input" name="message" id="message" cols="30" rows="10"
                     placeholder="Ingresa tu mensaje" required></textarea>
+                <span class="error-message" id="error-message"></span>
+
                 <button class="contact__form-btn btn" type="submit">Enviar</button>
             </form>
+            <div id="confirmationMessage" class="confirmation-message">
+                ✅ ¡Formulario enviado con éxito!
+            </div>
         </section>
         <!---------------------------------------------->
         <!----------------- Footer --------------------->
